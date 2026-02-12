@@ -80,7 +80,16 @@
             0% { border-top-color: #f1c40f; transform: rotate(0deg); }
             100% { border-top-color: #f1c40f; transform: rotate(360deg); }
         }
+/* Line 116 ke paas paste karein */
+@keyframes pulse-animation {
+    0% { transform: scale(1); box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4); }
+    50% { transform: scale(1.08); box-shadow: 0 5px 25px rgba(255, 0, 0, 0.8); }
+    100% { transform: scale(1); box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4); }
+}
 
+.join-btn {
+    animation: pulse-animation 1.5s infinite; /* Isse button hilne lagega */
+}
         /* Prediction Text */
         .prediction-rate {
             font-size: 35px;
